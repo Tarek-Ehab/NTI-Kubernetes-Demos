@@ -5,10 +5,11 @@ This repository contains Kubernetes demos and assignments from my training at th
 ## Lab 1 - Kubernetes Basics
 
 1. Install a Kubernetes cluster (use Minikube or [Katacoda Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground)).
-![l1](1.png)
-
+![l1](/Lab%201%20-%20Kubernetes%20Basics/1.png)
 2. Create a pod named `redis` using the `redis` image.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/1.png)
 3. Create a pod named `nginx` using the image `nginx123` with a pod-definition YAML file.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/1.png)
 4. Check the status of the `nginx` pod.
 5. Update the `nginx` pod's image to `nginx` and check the status again.
 6. Determine the number of ReplicaSets in the system.
