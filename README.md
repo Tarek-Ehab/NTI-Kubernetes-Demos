@@ -2,9 +2,10 @@
 
 This repository contains Kubernetes demos and assignments from my training at the National Telecommunication Institute (NTI). 
 
-### Lab 1 - Kubernetes Basics
+## Lab 1 - Kubernetes Basics
 
 1. Install a Kubernetes cluster (use Minikube or [Katacoda Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground)).
+
 2. Create a pod named `redis` using the `redis` image.
 3. Create a pod named `nginx` using the image `nginx123` with a pod-definition YAML file.
 4. Check the status of the `nginx` pod.
@@ -25,7 +26,7 @@ This repository contains Kubernetes demos and assignments from my training at th
 
 ---
 
-### Lab 2 - Namespaces and Resource Management
+## Lab 2 - Namespaces and Resource Management
 
 1. List the existing namespaces.
 2. Find the number of pods in the `kube-system` namespace.
@@ -44,7 +45,7 @@ This repository contains Kubernetes demos and assignments from my training at th
 
 ---
 
-### Lab 3 - DaemonSets and Services
+## Lab 3 - DaemonSets and Services
 
 1. List all DaemonSets across namespaces.
 2. Identify DaemonSets in the `kube-system` namespace.
@@ -65,7 +66,7 @@ This repository contains Kubernetes demos and assignments from my training at th
 
 ---
 
-### Lab 4 - ConfigMaps, Secrets, and Persistent Storage
+## Lab 4 - ConfigMaps, Secrets, and Persistent Storage
 
 1. Count the existing ConfigMaps.
 2. Create a ConfigMap named `webapp-config-map` with data `APP_COLOR=darkblue`.
@@ -105,12 +106,17 @@ This repository contains Kubernetes demos and assignments from my training at th
 
 ---
 
-### Lab 5 - Multi-Container Pods and Shared Storage
+## Lab 5 - Multi-Container Pods and Shared Storage
 
 1. Create a pod with 3 containers:
    - Configure the first two containers to write to a shared file.
    - Configure the third container to read and display the file content using `cat`.
    - Use an ephemeral or persistent volume as necessary.
 
+## Setup Instructions
 
+To run the demos, ensure you have Docker and Docker Compose installed. Clone the repository and navigate to the directory:
 
+```bash
+git clone https://github.com/Tarek-Ehab/NTI-Kubernetes-Demos.git
+cd NTI-Docker-Demos
