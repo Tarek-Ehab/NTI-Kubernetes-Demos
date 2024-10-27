@@ -5,6 +5,7 @@ This repository contains Kubernetes demos and assignments from my training at th
 ## Lab 1 - Kubernetes Basics
 
 1. Install a Kubernetes cluster (use Minikube or [Katacoda Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground)).
+![l1](1.png)
 
 2. Create a pod named `redis` using the `redis` image.
 3. Create a pod named `nginx` using the image `nginx123` with a pod-definition YAML file.
