@@ -46,42 +46,61 @@ This repository contains Kubernetes demos and assignments from my training at th
 ## Lab 2 - Namespaces and Resource Management
 
 1. List the existing namespaces.
-![l2](Lab 2 - Namespaces and Resource Management\2.png)
+![l2](/Lab%202%20-%20Namespaces%20and%20Resource%20Management/1.png)
 2. Find the number of pods in the `kube-system` namespace.
+![l2](/Lab%202%20-%20Namespaces%20and%20Resource%20Management/2.png)
 3. Create a Deployment in the `finance` namespace with:
    - Name: `beta`
    - Image: `redis`
    - Replicas: 2
    - Resource Requests: CPU: `500m`, Memory: `1G`
    - Resource Limits: CPU: `1`, Memory: `2G`
+![l2](/Lab%202%20-%20Namespaces%20and%20Resource%20Management/3.png)
 4. Label the master node with `color=blue`.
+![l2](/Lab%202%20-%20Namespaces%20and%20Resource%20Management/4.png)
 5. Create a Deployment named `blue` with the `nginx` image, 3 replicas, and Node Affinity to the master node with `color=blue`.
+![l2](/Lab%202%20-%20Namespaces%20and%20Resource%20Management/5.png)
 6. Create a namespace `iti` with a resource quota limiting pods to `2`.
+![l2](/Lab%202%20-%20Namespaces%20and%20Resource%20Management/6.png)
 7. In the `iti` namespace, create a Deployment named `nginx` with the `nginx` image and 3 replicas. Check the created pod count and explain.
+![l2](/Lab%202%20-%20Namespaces%20and%20Resource%20Management/7.png)
 8. Set a LimitRange for the `gold` namespace with memory limits (`500 Mi`) and requests (`200 Mi`).
+![l2](/Lab%202%20-%20Namespaces%20and%20Resource%20Management/8.png)
 9. Create a pod named `ingot` in the `gold` namespace.
-
+![l2](/Lab%202%20-%20Namespaces%20and%20Resource%20Management/9.png)
 ---
 
 ## Lab 3 - DaemonSets and Services
 
 1. List all DaemonSets across namespaces.
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/1.png)
 2. Identify DaemonSets in the `kube-system` namespace.
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/2.png)
 3. Check the image used by the `kube-proxy` DaemonSet.
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/3.png)
 4. Deploy a DaemonSet with the following:
    - Name: `elasticsearch`
    - Namespace: `kube-system`
    - Image: `k8s.gcr.io/fluentd-elasticsearch:1.20`
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/4.png)
 5. Deploy a pod `nginx-pod` with the `nginx:alpine` image and label `tier=backend`.
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/5.png)
 6. Deploy a test pod with the `nginx:alpine` image.
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/6.png)
 7. Create a service `backend-service` to expose the backend app on port `80`.
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/7.png)
 8. Curl `backend-service` from the test pod and note the response.
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/8.png)
 9. Deploy a Deployment named `web-app` with the `nginx` image and 2 replicas.
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/9.png)
 10. Expose `web-app` as a NodePort service `web-app-service` on port `80` and node port `30082`.
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/10.png)
 11. Access the `web-app` via the node.
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/11.png)
 12. Count the static pods in the cluster.
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/12.png)
 13. Identify the nodes running the static pods.
-
+![l3](/Lab%203%20-%20DaemonSets%20and%20Services/13.png)
 ---
 
 ## Lab 4 - ConfigMaps, Secrets, and Persistent Storage
@@ -130,7 +149,7 @@ This repository contains Kubernetes demos and assignments from my training at th
    - Configure the first two containers to write to a shared file.
    - Configure the third container to read and display the file content using `cat`.
    - Use an ephemeral or persistent volume as necessary.
-
+![l5](/Lab%205%20-%20Multi-Container%20Pods%20and%20Shared%20Storage/1.png)
 ## Setup Instructions
 
 To run the demos, ensure you have Docker and Docker Compose installed. Clone the repository and navigate to the directory:
