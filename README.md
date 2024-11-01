@@ -7,28 +7,46 @@ This repository contains Kubernetes demos and assignments from my training at th
 1. Install a Kubernetes cluster (use Minikube or [killercoda Kubernetes Playground](https://killercoda.com/playgrounds/scenario/kubernetes)).
 ![l1](/Lab%201%20-%20Kubernetes%20Basics/1.png)
 2. Create a pod named `redis` using the `redis` image.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/2.png)
 3. Create a pod named `nginx` using the image `nginx123` with a pod-definition YAML file.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/3.png)
 4. Check the status of the `nginx` pod.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/4.png)
 5. Update the `nginx` pod's image to `nginx` and check the status again.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/5.png)
 6. Determine the number of ReplicaSets in the system.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/6.png)
 7. Create a ReplicaSet named `replica-set-1` with the `busybox` image and 3 replicas.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/7.png)
 8. Scale `replica-set-1` to 5 pods.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/8.png)
 9. Verify the number of ready pods in `replica-set-1`.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/9.png)
 10. Delete one pod from `replica-set-1` and check the pod count again. Explain why there are still 5 pods.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/10.png)
 11. Determine the count of Deployments and ReplicaSets in the system.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/11.png)
 12. Create a Deployment named `deployment-1` with the `busybox` image and 3 replicas.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/12.png)
 13. Check the count of Deployments and ReplicaSets now.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/13.png)
 14. Verify the number of ready pods in `deployment-1`.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/14.png)
 15. Update `deployment-1`'s image to `nginx` and verify the ready pod count.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/15.png)
 16. Run `kubectl describe deployment deployment-1` to view events. Note the deployment strategy.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/16.png)
 17. Roll back the upgrade of `deployment-1`. Check the image used in `deployment-1`.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/17.png)
 18. Create a Deployment named `nginx-deployment` with the image `nginx:latest`, app labels `app: nginx-app` and `type: front-end`, container name `nginx-container`, and 3 replicas.
+![l1](/Lab%201%20-%20Kubernetes%20Basics/18.png)
 
 ---
 
 ## Lab 2 - Namespaces and Resource Management
 
 1. List the existing namespaces.
+![l2](Lab%202%20-%20Namespaces%20and%20Resource%20Management\1.png)
 2. Find the number of pods in the `kube-system` namespace.
 3. Create a Deployment in the `finance` namespace with:
    - Name: `beta`
