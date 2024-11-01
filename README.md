@@ -46,7 +46,7 @@ This repository contains Kubernetes demos and assignments from my training at th
 ## Lab 2 - Namespaces and Resource Management
 
 1. List the existing namespaces.
-![l2](Lab%202%20-%20Namespaces%20and%20Resource%20Management\1.png)
+![l2](Lab 2 - Namespaces and Resource Management\2.png)
 2. Find the number of pods in the `kube-system` namespace.
 3. Create a Deployment in the `finance` namespace with:
    - Name: `beta`
