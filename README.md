@@ -156,4 +156,4 @@ To run the demos, ensure you have Docker and Docker Compose installed. Clone the
 
 ```bash
 git clone https://github.com/Tarek-Ehab/NTI-Kubernetes-Demos.git
-cd NTI-Docker-Demos
+cd NTI-Kubernetes-Demos
