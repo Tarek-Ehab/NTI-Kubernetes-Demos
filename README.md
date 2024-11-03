@@ -106,41 +106,58 @@ This repository contains Kubernetes demos and assignments from my training at th
 ## Lab 4 - ConfigMaps, Secrets, and Persistent Storage
 
 1. Count the existing ConfigMaps.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/1.png)
 2. Create a ConfigMap named `webapp-config-map` with data `APP_COLOR=darkblue`.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/2.png)
 3. Create a pod `webapp-color` using the `nginx` image and attach the ConfigMap.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/3.png)
 4. Count the existing secrets.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/4.png)
 5. Check the number of keys in the `default-token` secret.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/5.png)
 6. Create a pod `db-pod` with the `mysql:5.7` image and check its status.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/6.png)
 7. Explain why `db-pod` status is not ready.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/7.png)
 8. Create a secret `db-secret` with:
    - `MYSQL_DATABASE`: `sql01`
    - `MYSQL_USER`: `user1`
    - `MYSQL_PASSWORD`: `password`
    - `MYSQL_ROOT_PASSWORD`: `password123`
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/8.png)
 9. Configure `db-pod` to use the `db-secret` for environment variables.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/9.png)
 10. Create a multi-container pod `yellow` with:
     - `lemon` container (image: `busybox`)
     - `gold` container (image: `redis`)
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/10.png)
 11. Create a pod `red` with `redis` image and an init container that uses `busybox` and sleeps for 20 seconds.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/11.png)
 12. Create a pod `print-envars-greeting` with:
     - Container name: `print-env-container` (image: `bash`)
     - Environment variables: `GREETING=Welcome to`, `COMPANY=DevOps`, `GROUP=Industries`
     - Command to echo `"$(GREETING) $(COMPANY) $(GROUP)"`
     - Use `kubectl logs` to view output.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/12.png)
 13. Locate the default kubeconfig file.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/13.png)
 14. Check the clusters defined in the kubeconfig file.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/14.png)
 15. Identify the user configured in the current context.
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/15.png)
 16. Create a PersistentVolume with:
     - Name: `pv-log`
     - Storage: `100Mi`
     - Access Modes: `ReadWriteMany`
     - Host Path: `/pv/log`
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/16.png)
 17. Create a PersistentVolumeClaim:
     - Name: `claim-log-1`
     - Storage Request: `50Mi`
     - Access Modes: `ReadWriteMany`
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/17.png)
 18. Create a pod `webapp` with `nginx` image using the `claim-log-1` PersistentVolumeClaim mounted at `/var/log/nginx`.
-
+![l4](/Lab%204%20-%20ConfigMaps,%20Secrets,%20and%20Persistent%20Storage/18.png)
 ---
 
 ## Lab 5 - Multi-Container Pods and Shared Storage
